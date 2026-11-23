@@ -1,0 +1,18 @@
+step,removed,remaining
+start,0,10000
+invalid void_fraction,0,10000
+invalid density_gcm3,0,10000
+invalid surface_area_m2g,0,10000
+invalid surface_area_m2cm3,0,10000
+invalid pld,0,10000
+invalid lcd,0,10000
+invalid volume_A3,0,10000
+lcd < pld,0,10000
+outlier density_gcm3,1,9999
+outlier volume_per_atom_A3,0,9999
+outlier pore_volume_cm3g,0,9999
+outlier metal_density_nm3,41,9958
+outlier sa_per_pore_volume,0,9958
+dropped sparse features: [],0,9958
+long table: MOFs removed above,84,19916
+long table: negative uptake,0,19916
