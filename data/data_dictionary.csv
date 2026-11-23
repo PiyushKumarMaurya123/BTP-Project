@@ -1,0 +1,63 @@
+column,description,unit,role,in_ml_wide_clean,in_ml_long_clean
+name,MOFX-DB structure name (hMOF-<id>),-,id,True,True
+mofid,"MOFid identifier (building blocks, topology, catenation)",-,id,True,True
+mofkey,"MOFkey identifier (building blocks, topology); used to group the train/test split",-,id,True,True
+database,Source database in MOFX-DB,-,id,True,True
+void_fraction,Helium void fraction (MOFX-DB),-,feature,True,True
+surface_area_m2g,Gravimetric surface area (MOFX-DB),m2/g,feature,True,True
+surface_area_m2cm3,Volumetric surface area (MOFX-DB),m2/cm3,feature,True,True
+pld,Pore limiting diameter (MOFX-DB),angstrom,feature,True,True
+lcd,Largest cavity diameter (MOFX-DB),angstrom,feature,True,True
+n_elements,Number of distinct elements,-,feature,True,True
+metals,"Metal elements present, |-separated",-,id,True,True
+el_C,"1 if element C is present, else 0",-,feature,True,True
+el_F,"1 if element F is present, else 0",-,feature,True,True
+el_H,"1 if element H is present, else 0",-,feature,True,True
+el_O,"1 if element O is present, else 0",-,feature,True,True
+el_Zn,"1 if element Zn is present, else 0",-,feature,True,True
+el_Cl,"1 if element Cl is present, else 0",-,feature,True,True
+el_Br,"1 if element Br is present, else 0",-,feature,True,True
+el_N,"1 if element N is present, else 0",-,feature,True,True
+density_gcm3,"Crystal density (pymatgen, from CIF)",g/cm3,feature,True,True
+volume_A3,Unit cell volume,angstrom^3,feature,True,True
+n_atoms,Atoms in unit cell,-,feature,True,True
+mass_amu,Unit cell mass,amu,feature,True,True
+volume_per_atom_A3,Cell volume / number of atoms,angstrom^3,feature,True,True
+a_A,Lattice length a,angstrom,feature,True,True
+b_A,Lattice length b,angstrom,feature,True,True
+c_A,Lattice length c,angstrom,feature,True,True
+alpha,Lattice angle alpha,degree,feature,True,True
+beta,Lattice angle beta,degree,feature,True,True
+gamma,Lattice angle gamma,degree,feature,True,True
+metal_fraction,Fraction of atoms that are metals,-,feature,True,True
+metal_density_nm3,Metal atoms per nm3,1/nm3,feature,True,True
+avg_electronegativity,Mean Pauling electronegativity of atoms,-,feature,True,True
+avg_atomic_mass,Mean atomic mass,amu,feature,True,True
+frac_H,Atomic fraction of H,-,feature,True,True
+frac_C,Atomic fraction of C,-,feature,True,True
+frac_N,Atomic fraction of N,-,feature,True,True
+frac_O,Atomic fraction of O,-,feature,True,True
+frac_F,Atomic fraction of F,-,feature,True,True
+frac_Cl,Atomic fraction of Cl,-,feature,True,True
+frac_Br,Atomic fraction of Br,-,feature,True,True
+frac_S,Atomic fraction of S,-,feature,True,True
+frac_P,Atomic fraction of P,-,feature,True,True
+pore_volume_cm3g,Void fraction / density,cm3/g,feature,True,True
+lcd_pld_ratio,LCD / PLD,-,feature,True,True
+sa_per_pore_volume,Gravimetric surface area / pore volume,m2/cm3,feature,True,True
+cap_mgg,"H2 uptake at 77 K, 100 bar",mg/g,target,True,False
+del_ps_mgg,"Deliverable capacity, 77 K, q(100 bar) - q(2 bar)",mg/g,target,True,False
+del_tps_mgg,Temperature-pressure swing deliverable (empty: no 160 K data),mg/g,unused,True,False
+cap_gL,"H2 uptake at 77 K, 100 bar (cap_mgg x density)",g/L,target,True,False
+cap_wt,"H2 uptake at 77 K, 100 bar, 100*q/(1000+q)",wt%,target,True,False
+del_ps_gL,"Deliverable capacity, 77 K, 100 -> 2 bar",g/L,target,True,False
+del_ps_wt,"Deliverable capacity, 77 K, 100 -> 2 bar",wt%,target,True,False
+del_tps_gL,Temperature-pressure swing deliverable (empty: no 160 K data),g/L,unused,True,False
+del_tps_wt,Temperature-pressure swing deliverable (empty: no 160 K data),wt%,unused,True,False
+temperature_K,Temperature (long table),K,condition,False,True
+pressure_bar,Pressure (long table),bar,feature,False,True
+uptake_mgg,H2 uptake at the given pressure (long table),mg/g,target,False,True
+inv_temperature,1 / temperature (long table; constant here),1/K,condition,False,True
+log_pressure,ln(pressure) (long table),-,feature,False,True
+uptake_gL,H2 uptake at the given pressure (long table),g/L,target,False,True
+uptake_wt,H2 uptake at the given pressure (long table),wt%,unused,False,True
