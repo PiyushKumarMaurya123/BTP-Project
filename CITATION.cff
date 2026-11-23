@@ -1,0 +1,37 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite it as below, and also cite MOFX-DB."
+title: "Hydrogen Adsorption Prediction in Metal–Organic Frameworks Using Machine Learning"
+type: dataset
+version: 1.0.0
+date-released: 2026-11-23
+authors:
+  - given-names: Vishal
+    affiliation: "Department of Chemical Engineering, Indian Institute of Technology Roorkee"
+  - given-names: Piyush Kumar
+    family-names: Maurya
+    affiliation: "Department of Chemical Engineering, Indian Institute of Technology Roorkee"
+license:
+  - MIT
+  - CC-BY-4.0
+keywords:
+  - metal-organic frameworks
+  - hydrogen storage
+  - machine learning
+  - XGBoost
+  - deliverable capacity
+  - MOFX-DB
+references:
+  - type: article
+    title: "MOFX-DB: An Online Database of Computational Adsorption Data for Nanoporous Materials"
+    authors:
+      - family-names: Bobbitt
+        given-names: N. Scott
+      - family-names: Snurr
+        given-names: Randall Q.
+    journal: "Journal of Chemical & Engineering Data"
+    year: 2023
+    volume: 68
+    issue: 2
+    start: 483
+    end: 498
+    doi: 10.1021/acs.jced.2c00583
